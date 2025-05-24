@@ -1,0 +1,23 @@
+"""
+This program takes a user input as a float between 0.0 and 1.0, runs
+it through some conditionals and outouts a corresponding letter grade.
+
+"""
+
+score = float(input("Enter Score: "))
+
+
+try: 
+    if score >= 0.9:
+        print("A")
+    elif score >= 0.8:
+        print("B")
+    elif score >= 0.7:
+        print("C")
+    elif score >= 0.6:
+        print("D")
+    elif score < 0.6:
+        print("F")
+
+except:
+    print("Enter a number from 0.0 to 1.0")
