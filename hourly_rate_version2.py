@@ -3,7 +3,7 @@ rate = float(input("Enter Rate: "))
 
 
 if hrs > 40:
-    # print("Overtime")
+    print("Overtime")
     reg_pay = hrs*rate
     ot = (hrs - 40) * (rate * .5)
     print(reg_pay + ot)
