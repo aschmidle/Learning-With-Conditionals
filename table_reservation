@@ -1,0 +1,12 @@
+""" 
+This program takes a user imput for their name and cross references it
+for a given string variable to check for thr availibility of a table reservation.
+"""
+name = str(input("Enter name: "))
+print(name)
+reservation_name = "Drew"
+
+if name == reservation_name:
+    print("Right this way!")
+else:
+    print("Sorry, we don't have a reservation under that name.")
