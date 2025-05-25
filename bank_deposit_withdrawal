@@ -1,16 +1,20 @@
-# This program simulates a single transaction -
-# either a deposit or a withdrawal - at a bank.
+"""
+This program starts with an initial balance of 1000 and asks the user to enter either their
+transaction is a deposit or withdrawal and updates their bank balance. A special warning is
+included incase they overdraft.
+"""
 
-intial_balance = 1000
+initial_balance = 1000
 
 transaction = str(input("Is this a deposit or withdrawal? "))
 amount = float(input("Enter amount: "))
 
 if transaction == "deposit":
-    nb = intial_balance + amount
+    nb = initial_balance + amount
     print(nb)
 elif transaction == "withdrawal":
-    nb = intial_balance - amount
+    nb = initial_balance - amount
+    # Checks to see if balance is negative or positive
     if nb < 0:
         print("You cannot have a negative balance!")
     else:
