@@ -1,0 +1,12 @@
+"""
+This program takes a user age as input and checks to
+see if the user is old enough to vote or not.
+"""
+
+age = int(input("What is your age? "))
+print("User is " + str(age) + " years old")
+
+if age >= 18:
+    print("Old enough to vote")
+else: 
+    print("Not old enough to vote")
