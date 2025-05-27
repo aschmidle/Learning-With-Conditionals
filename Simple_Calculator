@@ -1,0 +1,21 @@
+"""
+This is a simple caluclator excercise that has the user choose an option by entering 1, 2, 3, or 4 based on the operation they want completed.
+The user then enters in two numbers which the program calculates based on the chosen mathematical operation chosen in line 1.
+"""
+
+choice = int(input("What do wish to do? (1)Add, (2) Subtract, (3) Multiple, (4)Divide: "))
+
+num1 = int(input("Enter your first number: "))
+num2 = int(input("Enter your second number: "))
+
+if choice == 1:
+    print(f"Answer: {num1 + num2}")
+elif choice == 2:
+    print(f"Answer: {num1 - mum2}")
+elif choice == 3:
+    print(f"Answer: {num1 * num2}")
+elif choice == 4:
+    if num2 == 0:
+        print("Error: Enter a number other than 0 for second number.")
+    else:
+        print(num1 // num2)
