@@ -1,0 +1,36 @@
+"""
+This program runs a simple 3 question quiz about New York State. For each question, the user provides input by answering the question with one of the 4 choices provided. 
+After each answer, the user is told whether they are right and wrong. A "score" variable is set at the top and for each question answered, the vairable increase by one.
+A score is displayed after ever question and total score is tallied at the end.
+"""
+
+score = 0
+
+Q1 = input("What is the capital of New York? \n(A)Albany \n(B)Buffalo \n(C)New York City \n(D)Rochester\n\n")
+if Q1.upper() == "A":
+    score += 1
+    print(f"Correct! \n Plus 1 point!")
+else:
+    score += 0
+    print(f"Sorry. Wrong answer.")
+    print(f"Your current score is: {score}")
+
+Q2 = input("\nWhich NFL team plays in New York State? \n(A)New York Jets \n(B)Buffalo Bills \n(C)New York Giants \n(D)Cleveland Browns\n\n")
+if Q2.upper() == "B":
+    score += 1
+    print(f"Correct! \n Plus 1 point!")
+else:
+    score += 0
+    print(f"Sorry. Wrong answer.")
+print(f"Your current score is: {score}")
+
+Q3 = input("\nWhich of the following is not a NHL team in New York State? \n(A)New York Rangers \n(B)Buffalo Sabres \n(C)Toronto Maple Leafs \n(D)New York Islanders\n\n")
+
+if Q3.upper() == "C":
+    score += 1
+    print(f"Correct! Plus 1 Point!\n")
+else:
+    score += 0
+    print(f"Sorry. Wrong Answer.\n")
+    
+print(f"Your final score is: {score}")
